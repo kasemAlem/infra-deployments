@@ -6,7 +6,7 @@ spec:
   template:
     spec:
       containers:
-      - name: manager
-        env:
-          - name: IMAGE_TAG_ON_PR_EXPIRATION
-            value: ""
+        - name: manager
+          env:
+            - name: IMAGE_TAG_ON_PR_EXPIRATION
+              value: "6h"
